@@ -8,6 +8,8 @@ Bundler.require(*Rails.groups)
 
 module Postgresapp
   class Application < Rails::Application
+    
+    config.assets.initialize_on_precompile = false
      
     # uncomment to ensure a common layout for devise forms
     #   config.to_prepare do   # Devise
